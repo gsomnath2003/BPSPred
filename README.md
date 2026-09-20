@@ -2,9 +2,6 @@
 
 ### Bioactive Peptide Safety Predictor
 
-<p align="center">
-  <img src="lib/logo.png" alt="BPSPred Logo" width="220">
-</p>
 
 **BPSPred** is a web-based machine learning platform for the computational assessment of bioactive peptide safety through three complementary endpoints: **cytotoxicity, hemolysis, and cell death**.
 
