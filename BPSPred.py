@@ -775,9 +775,10 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    logo_path = Path(__file__).resolve().parent / "logo.png"
+    BASE_DIR = Path(__file__).resolve().parent
+    LOGO_PATH = BASE_DIR / "logo.png"
     st.image(
-        str(logo_path),
+        str(LOGO_PATH),
         width=250
     )
 
@@ -814,9 +815,9 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    logo_path1 = Path(__file__).resolve().parent / "banner.png"
+    LOGO_PATH1 = BASE_DIR / "Banner.png"
     st.image(
-        str(logo_path1),
+        str(LOGO_PATH1),
         use_container_width=True
     )
 
