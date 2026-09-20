@@ -111,9 +111,9 @@ BPSPred is intended for **research and preliminary computational screening**. Pr
 ## 👨‍🔬 Developers
 
 **BPSPred Development Team**
-Prof. Kunal Roy and his team
-DTC Laboratory 
-Department of Pharmaceutical Technology
+Prof. Kunal Roy and his team,
+DTC Laboratory, 
+Department of Pharmaceutical Technology,
 Jadavpur University, Kolkata, India
 
 **Version:** 1.0
