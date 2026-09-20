@@ -17,6 +17,7 @@ from PIL import Image
 
 #inputs
 inps = joblib.load("inputs.joblib")
+inps1 = joblib.load("inputs1.joblib")
 imgs = joblib.load("images.joblib")
 img1 = Image.open(BytesIO(imgs["image1"]))
 img2 = Image.open(BytesIO(imgs["image2"]))
@@ -36,7 +37,7 @@ cdm = inps[13]
 #hemolysis
 hem_tr = inps[4]
 hem_te = inps[5]
-ecfp_hem = pd.read_excel("hem_tr_ecfp4.xlsx", index_col=0)
+ecfp_hem = inps1[0]
 hem_d = inps[11]
 hemm = inps[14]
 #AAi values
