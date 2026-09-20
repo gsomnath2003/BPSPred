@@ -776,7 +776,7 @@ with st.sidebar:
     )
 
     BASE_DIR = Path(__file__).resolve().parent
-    LOGO_PATH = BASE_DIR / "logo.png"
+    LOGO_PATH = BASE_DIR / "Logo.png"
     st.image(
         str(LOGO_PATH),
         width=250
