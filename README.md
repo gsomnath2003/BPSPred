@@ -115,5 +115,3 @@ Prof. Kunal Roy and his team,
 DTC Laboratory, 
 Department of Pharmaceutical Technology,
 Jadavpur University, Kolkata, India
-
-**Version:** 1.0
