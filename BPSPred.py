@@ -10,6 +10,7 @@ from rasar import ra_similarity
 from mordred import Calculator, descriptors
 from rdkit.Chem import rdFingerprintGenerator
 from SOCN_QSO import socn_qso_desc_calculator
+from pathlib import Path
 
 
 #inputs
@@ -774,8 +775,9 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
+    logo_path = Path(__file__).resolve().parent / "logo.png"
     st.image(
-        "logo.png",
+        logo path,
         width=250
     )
 
@@ -812,8 +814,9 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
+    logo_path1 = Path(__file__).resolve().parent / "banner.png"
     st.image(
-        "banner.png",
+        logo_path1,
         use_container_width=True
     )
 
