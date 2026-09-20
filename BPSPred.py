@@ -10,14 +10,16 @@ from rasar import ra_similarity
 from mordred import Calculator, descriptors
 from rdkit.Chem import rdFingerprintGenerator
 from SOCN_QSO import socn_qso_desc_calculator
+from io import BytesIO
+from PIL import Image
 
 
 
 #inputs
 inps = joblib.load("inputs.joblib")
 imgs = joblib.load("images.joblib")
-img1 = imgs["image1"]
-img2 = imgs["image2"]
+img1 = Image.open(BytesIO(imgs["image1"]))
+img2 = Image.open(BytesIO(imgs["image2"]))
 
 #cytotoxicity
 cyt_tr = inps[0]
