@@ -10,11 +10,14 @@ from rasar import ra_similarity
 from mordred import Calculator, descriptors
 from rdkit.Chem import rdFingerprintGenerator
 from SOCN_QSO import socn_qso_desc_calculator
-from pathlib import Path
+
 
 
 #inputs
 inps = joblib.load("inputs.joblib")
+imgs = joblib.load("images.joblib")
+img1 = imgs["image1"]
+img2 = imgs["image2"]
 
 #cytotoxicity
 cyt_tr = inps[0]
@@ -775,10 +778,9 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    BASE_DIR = Path(__file__).resolve().parent
-    LOGO_PATH = BASE_DIR / "Logo.png"
+    
     st.image(
-        str(LOGO_PATH),
+        img1,
         width=250
     )
 
@@ -815,9 +817,9 @@ with st.sidebar:
         unsafe_allow_html=True
     )
 
-    LOGO_PATH1 = BASE_DIR / "Banner.png"
+    
     st.image(
-        str(LOGO_PATH1),
+        img2,
         use_container_width=True
     )
 
