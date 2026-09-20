@@ -13,8 +13,6 @@ from SOCN_QSO import socn_qso_desc_calculator
 from io import BytesIO
 from PIL import Image
 
-
-
 #inputs
 inps = joblib.load("inputs.joblib")
 inps1 = joblib.load("inputs1.joblib")
@@ -926,7 +924,7 @@ if page == "🏠  Home":
             </div>
 
             <div class="card-title">
-                    Cell-eath
+                    Cell-death
             </div>
 
             <div class="card-text">
