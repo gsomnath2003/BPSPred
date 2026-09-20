@@ -1,6 +1,6 @@
 # BPSPred
 
-### An Integrated Machine Learning-Assisted Multi-Endpoint Predictor for the Safety Assessment of Bioactive Peptides
+### Bioactive Peptide Safety Predictor
 
 <p align="center">
   <img src="lib/logo.png" alt="BPSPred Logo" width="220">
