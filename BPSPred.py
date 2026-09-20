@@ -777,7 +777,7 @@ with st.sidebar:
 
     logo_path = Path(__file__).resolve().parent / "logo.png"
     st.image(
-        logo path,
+        str(logo path),
         width=250
     )
 
@@ -816,7 +816,7 @@ with st.sidebar:
 
     logo_path1 = Path(__file__).resolve().parent / "banner.png"
     st.image(
-        logo_path1,
+        str(logo_path1),
         use_container_width=True
     )
 
