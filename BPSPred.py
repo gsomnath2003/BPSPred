@@ -854,7 +854,7 @@ if page == "🏠  Home":
         <div class="home-subtitle">
             BPSPred is a multi-endpoint prediction platform based on machine learning, 
             design to evaluate the safety profile of bioactive peptides. It predicts 
-            cytotoxicity, hemolysis and cell-death potential, helping researchers 
+            cytotoxicity, hemolysis and cell death potential, helping researchers 
             screen safer peptides for therapeutic and nutraceutical applications.
         </div>
         """,
@@ -924,11 +924,11 @@ if page == "🏠  Home":
             </div>
 
             <div class="card-title">
-                    Cell-death
+                    Cell death
             </div>
 
             <div class="card-text">
-                    Predict cell-death induction potential
+                    Predict cell death initiation potential
             </div>
 
             </div>
@@ -1083,10 +1083,10 @@ if page == "🏠  Home":
                 pred_cdh = cdm.predict(cdh_std_test)
 
                 if pred_cdh[0] == 0:
-                    cdh_status = "Less Cell-death Initiating"
+                    cdh_status = "Less Cell death Initiating"
                     cdh_class = "safe"
                 else:
-                    cdh_status = "More Cell-death Initiating"
+                    cdh_status = "More Cell death Initiating"
                     cdh_class = "unsafe"
 
                 ad_stat_cdh= ad_analysis(ecfp_cd, ecfp_te)
@@ -1162,7 +1162,7 @@ if page == "🏠  Home":
                     st.markdown(f"""
                         <div class="result-card">
                         <div class="result-heading">
-                        CELL-DEATH
+                        CELL DEATH
                         </div>
                         <div class="result-value {cdh_class}">
                         {cdh_status}
@@ -1291,9 +1291,9 @@ if page == "🏠  Home":
                             pred_cdh = cdm.predict(cdh_std_test)
 
                             if pred_cdh[0] == 0:
-                                cdh_status = "Less Cell-death Initiating"
+                                cdh_status = "Less Cell death Initiating"
                             else:
-                                cdh_status = "More Cell-death Initiating"
+                                cdh_status = "More Cell death Initiating"
 
                             ad_stat_cdh = ad_analysis(ecfp_cd, ecfp_te)
 
@@ -1465,15 +1465,15 @@ elif page == "🧠  About the Models":
 
 
             <div class="card-title">
-                Cell-death Model
+                Cell death Model
             </div>
 
             <div class="card-text">
                 <p>
-                The BPSPred cell-death model was developed using peptides collected from curated DBAASP v3 and DCTpep databases, 
-                obtaining 344 peptides, comprising 198 more cell-death initiating
-                and 146 less cell-death initating peptides. Peptides with a 50% cell-death concentration of ≤100 μM were classified 
-                as more cell-death initating, while above 100 μM were considered less cell-death initiating.
+                The BPSPred cell death model was developed using peptides collected from curated DBAASP v3 and DCTpep databases, 
+                obtaining 344 peptides, comprising 198 more cell death initiating
+                and 146 less cell death initating peptides. Peptides with a 50% cell death concentration of ≤100 μM were classified 
+                as more cell death initating, while above 100 μM were considered less cell death initiating.
                 </p>
                 <hr>
                 <p>
@@ -1483,7 +1483,7 @@ elif page == "🧠  About the Models":
                 <hr>
                 <p>
                 The best-performing model was selected based on MCC robustness, 
-                providing a reliable computational approach for assessing the cell-death potential of bioactive peptides.
+                providing a reliable computational approach for assessing the cell death potential of bioactive peptides.
                 </p>
             </div>
 
@@ -1690,7 +1690,7 @@ elif page == "📊  Training and Test Sets":
     st.divider()
 
     # CELL-DEATH
-    st.markdown("### 50% Cell-death")
+    st.markdown("### 50% Cell death")
 
     c9, c10 = st.columns(2)
 
@@ -1788,7 +1788,7 @@ elif page == "📖  User Manual":
     BPSPred evaluates the submitted peptide using three independent
     safety endpoints: <strong>Cytotoxicity</strong>,
     <strong>Hemolytic Activity</strong>, and
-    <strong>Cell-death</strong>. The corresponding predicted safety
+    <strong>Cell death</strong>. The corresponding predicted safety
     status and Applicability Domain (AD) information are displayed
     for each endpoint.
     </p>
@@ -1822,9 +1822,9 @@ elif page == "📖  User Manual":
     The <strong>Hemolysis Status</strong> indicates whether the
     peptide is predicted to exhibit <strong>50% Hemolytic</strong> or
     <strong>Less hemolytic</strong> activity.
-    The <strong>Cell-death Status</strong> indicates whether the
-    peptide is predicted to have <strong> 50% Cell-death inducing</strong>
-    or <strong>Less cell-eath inducing</strong> activity.
+    The <strong>Cell death Status</strong> indicates whether the
+    peptide is predicted to have <strong> 50% Cell death inducing</strong>
+    or <strong>Less cell eath inducing</strong> activity.
     </p>
 
     <p>
